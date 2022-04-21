@@ -25,13 +25,11 @@ def division(a, b, count):
           rec += 1
         n += str(rec)
       else:
-        if a != 0:
-          b = int(n[-1:])
-          n = n[:-1]
-          if b > 5:
-            n = str(int(n) + 1)
+        b = int(n[-1:])
+        n = n[:-1]
+        if b > 5:
+          n = str(int(n) + 1)
       res = float(str(res) + "." + n)
     if checker:
       res = -1 * res
   return res
-print(division(35, 6, 3))
