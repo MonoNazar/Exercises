@@ -1,6 +1,5 @@
-def division(a, b, count):
-  a = -22
-  b = -7
+
+def division(a=1, b=1, count=4):
   res = 0
   checker = False
   if a < 0:
