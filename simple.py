@@ -32,3 +32,5 @@ def nails():
             default_lenght += first_list[x] - first_list[x-1]
             index += 1
     return default_lenght
+
+pass
