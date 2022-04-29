@@ -49,12 +49,3 @@ class CodeCS20():
         print("Your message encoded")
     else:
       print("Wrong index. If you want to change index use function change_index()")
-
-
-a = CodeCS20('hello my name12323', 4)
-a.encode()
-a.encode()
-print(a.message)
-a.decode()
-a.decode()
-print(a.message)
