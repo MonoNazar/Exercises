@@ -71,10 +71,3 @@ class CodeCS20:
       return f"{self.__message} index:{self.__index}, not encoded"
     else:
       return f"{self.__message} index:{self.__index}, encoded"
-
-my_obj = CodeCS20("test")
-my_obj.change_index(3)
-my_obj.encode()
-print(my_obj)
-
-
