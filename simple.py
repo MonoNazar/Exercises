@@ -9,7 +9,7 @@ def nails():
     index = 1
     default_lenght = first_list[1] - first_list[0] + first_list[-1] - first_list[-2]
     for x in range(2, len(first_list) - 2):
-        if first_list[x] - first_list[x-1] >= first_list[x+1] - first_list[x]:
+        if first_list[x] - first_list[x - 1] >= first_list[x + 1] - first_list[x]:
             if not checker:
                 checker = True
                 index = 0
@@ -17,8 +17,8 @@ def nails():
                 break
             if index == 2:
                 index = 0
-                default_lenght -= first_list[x] - first_list[x-1]
-            default_lenght += first_list[x+1] - first_list[x]
+                default_lenght -= first_list[x] - first_list[x - 1]
+            default_lenght += first_list[x + 1] - first_list[x]
             index += 1
         else:
             if checker:
@@ -28,11 +28,7 @@ def nails():
                     continue
             if index == 2:
                 index = 0
-                default_lenght -= first_list[x-1] - first_list[x-2]
-            default_lenght += first_list[x] - first_list[x-1]
+                default_lenght -= first_list[x - 1] - first_list[x - 2]
+            default_lenght += first_list[x] - first_list[x - 1]
             index += 1
     return default_lenght
-
-import random
-
-print(random.randint(1,12))
