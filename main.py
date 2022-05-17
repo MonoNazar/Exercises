@@ -1,4 +1,6 @@
 from operators import Operators
+from datetime import datetime 
 
-a = Operators(-12.5, -4)
-print(a.division())
+a = Operators(2.5, 44)
+print(a.power(10, 2))
+

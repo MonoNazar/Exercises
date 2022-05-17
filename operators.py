@@ -78,11 +78,16 @@ class Operators:
     #                 self.result += b / (10 ** x)
     #                 print(self.result)
     #     return self.result
-    #
-    # def power(self, count=2):
-    #     number = 5
-    #     res = 0
-    #     for x in number:
-    #         res += number
+
+    def power(self, count=2, number=False):
+        if not number:
+            number = self.first_number
+        res = number
+        for x in range(1, count):
+            new_res = res
+            res = 0
+            for y in range(1, number+1):
+                res += new_res
+        return res
 
 
