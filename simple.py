@@ -32,3 +32,19 @@ def nails():
             default_lenght += first_list[x] - first_list[x - 1]
             index += 1
     return default_lenght
+
+def square():
+    # квадрат
+    l = int(input())
+    rec = input()
+    list_numbers = rec.split()
+    res = 0
+    for x in range(1, 101):
+        res += list_numbers.count(str(x)) // 4
+    print(res)
+
+
+
+
+
+square()
